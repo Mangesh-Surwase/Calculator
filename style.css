@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Forum", serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #3a4452);
+}
+
+.calculator {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.operator {
+    background: rgba(255, 166, 0, 0.6);
+}
+
+.operator:hover {
+    background: rgba(255, 166, 0, 0.8);
+}
+
+.eqlbtn {
+    background: rgba(0, 200, 83, 0.6);
+}
+
+.eqlbtn:hover {
+    background: rgba(0, 200, 83, 0.8);
+}
